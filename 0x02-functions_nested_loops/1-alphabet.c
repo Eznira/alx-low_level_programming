@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - Program begins from here!
+ * print_alphabet - Program begins from here!
  *
- * descriptio: Prints the alphabets 10 times
+ * description: Prints the lowercase alphabets
  *
- * Return: 0 (Succes)
+ * Return: void
  */
 void print_alphabet(void)
 {

@@ -3,9 +3,9 @@
 /**
  * main - Program begins from here!
  *
- * description - Prints the alphabets 10 times
+ * descriptio: Prints the alphabets 10 times
  *
- * Return - 0 (Succes)
+ * Return: 0 (Succes)
  */
 void print_alphabet(void)
 {

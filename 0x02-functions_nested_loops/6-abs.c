@@ -4,7 +4,7 @@
  * _abs - Computes the absolute value of an integer
  * @n: The integer to compute the absolute value of
  *
- * Description: This function computes the absolute value of d given integer @n.
+ * Description: This function gets d absolute value of d given integer @n.
  *              If @n is +ve or zero, it returns @n. If @n is -ve, it returns
  *              the negation of @n, i.e., its positive counterpart.
  *

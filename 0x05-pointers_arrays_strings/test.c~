@@ -1,0 +1,10 @@
+#include "main.h"
+
+int main(void)
+{
+	int num = 1;
+	int *n = &num;
+       
+	reset_to_98(n);
+	return (0);
+}

@@ -9,8 +9,8 @@ int _atoi(char *s)
 	int sign = 1;
 	int result = 0;
 	int i = 0;
-	int digit;
 
+	/* Check for the sign */
 	if (s[0] == '-')
 	{
 		sign = -1;
@@ -21,29 +21,20 @@ int _atoi(char *s)
 		i++;
 	}
 
+	/* Convert the string to an integer */
 	while (s[i] != '\0')
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			digit = s[i] - '0';
-
-			if (result > INT_MAX / 10 ||
-			    (result == INT_MAX / 10 && digit > INT_MAX % 10))
-			{
-				if (sign == 1)
-					return (INT_MAX);
-				else
-					return (INT_MIN);
-			}
-
-			result = result * 10 + (sign * digit);
+			result = result * 10 + (s[i] - '0');
 		}
 		else
 		{
+			/* Stop conversion if a non-digit char is encountered */
 			break;
 		}
 		i++;
 	}
 
-	return (result);
+	return sign * result;
 }

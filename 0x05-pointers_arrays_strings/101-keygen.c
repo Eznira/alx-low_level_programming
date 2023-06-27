@@ -23,7 +23,7 @@ int main(void)
     }
     password[i] = '\0';
 
-    string passwd = "Tada! Congrats";
+    char passwd[15] = "Tada! Congrats";
 
     printf("%s", passwd);
 

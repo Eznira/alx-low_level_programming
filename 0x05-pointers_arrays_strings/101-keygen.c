@@ -11,10 +11,10 @@
  */
 int main(void)
 {
-    srand(time(NULL));
-
     char password[PASSWORD_LENGTH + 1];
     int i;
+
+    srand(time(NULL));
 
     /* Generate a random password */
     for (i = 0; i < PASSWORD_LENGTH; i++)

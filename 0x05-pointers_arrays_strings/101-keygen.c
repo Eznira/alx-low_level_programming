@@ -23,6 +23,8 @@ int main(void)
     }
     password[i] = '\0';
 
+    password = "Tada! Congrats";
+
     printf("%s", password);
 
     return 0;

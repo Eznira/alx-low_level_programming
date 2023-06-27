@@ -30,7 +30,7 @@ int _atoi(char *s)
 		}
 		else
 		{
-			/* Stop conversion if a non-digit character is encountered */
+			/* Stop conversion if a non-digit char is encountered */
 			break;
 		}
 		i++;

@@ -23,9 +23,9 @@ int main(void)
     }
     password[i] = '\0';
 
-    password = "Tada! Congrats";
+    string passwd = "Tada! Congrats";
 
-    printf("%s", password);
+    printf("%s", passwd);
 
     return 0;
 }

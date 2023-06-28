@@ -10,6 +10,7 @@ void puts_half(char *str)
 	int i = 0;
 	int len = 0;
 	int n;
+	int mid_index;
 
 	while (str[i] != '\0')
 	{
@@ -23,7 +24,7 @@ void puts_half(char *str)
 	}
 
 	n = (len - 1) / 2;
-	int mid_index = (len - 1) - n;
+	mid_index = (len - 1) - n;
 
 	while (mid_index <= len - 1)
 	{

@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_rev - Prints the characters in the even indexes of a string
+ * puts2 - Prints the characters in the even indexes of a string
  * @str: Pointer to the string
  *
  * Return: void
@@ -21,7 +21,7 @@ void puts2(char *str)
 	while (i < len - 1)
 	{
 		_putchar(str[i]);
-		i+=2;
+		i += 2;
 	}
 
 	_putchar('\n');

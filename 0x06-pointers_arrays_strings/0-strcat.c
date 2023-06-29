@@ -2,29 +2,29 @@
 
 /**
  * _strcat - Concatenates two strings.
- * @first: The first string.
- * @second: The second string.
+ * @dest: The first string.
+ * @src The second string.
  *
  * Return: A pointer to the resulting string.
  */
-char *_strcat(char *first, char *second)
+char *_strcat(char *dest, char *src)
 {
 	char *result;
 
-	result = first;
+	result = dest;
 
 	int len = 0;
 
-	while (first[len] != '\0')
+	while (dest[len] != '\0')
 	{
 		len++;
 	}
 
 	int i = 0;
 
-	while (second[i] != '\0')
+	while (src[i] != '\0')
 	{
-		result[len] = second[i];
+		result[len] = src[i];
 
 		len++;
 		i++;

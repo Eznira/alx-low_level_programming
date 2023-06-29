@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
- * _strcat - Concatenates two strings.
+ * _strncat - Concatenates two strings, up to index n of the second string
  * @dest: The first string.
  * @src: The second string.
+ * @n: The index of the second string.
  *
  * Return: A pointer to the resulting string.
  */

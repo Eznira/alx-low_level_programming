@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * print_diagsums - Prints the sums of the main
  *and secondary diagonals of a square matrix.
@@ -12,7 +11,9 @@ void print_diagsums(int *a, int size)
 	int sum_secondary = 0;  /* Sum of the secondary diagonal elements */
 
 	/* Calculate the sums */
-	for (int i = 0; i < size; i++)
+	int i;
+
+	for (i = 0; i < size; i++)
 	{
 		sum_main += a[i * size + i];
 /* Elements on the main diagonal */

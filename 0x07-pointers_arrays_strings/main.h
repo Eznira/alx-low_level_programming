@@ -10,5 +10,6 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 void print_diagsums(int *a, int size);
 void set_string(char **s, char *to);
+int wildcmp(char *s1, char *s2);
 
 #endif /* MAIN_H */

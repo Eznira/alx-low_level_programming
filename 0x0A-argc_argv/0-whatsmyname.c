@@ -9,9 +9,10 @@
  */
 int main(int argc, char **argv)
 {
-	if (agrc > 0)
+	if (argc > 0)
 	{
 		printf("%s", argv[0]);
+		printf("\n");
 		return (0);
 	}
 	return (1);

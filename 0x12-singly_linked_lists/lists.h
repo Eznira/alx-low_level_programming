@@ -4,14 +4,14 @@
 #include <stddef.h>
 
 /**
- * struct node - Node object for the singly linked list
+ * struct list_s - Node object for the singly linked list
  * @str: string
  * @len: length of the string
  * @next: address of the next node
  *
  * Description: custom singly linked list structure
  */
-typedef struct node
+typedef struct list_s
 {
 	char *str;
 	unsigned int len;

@@ -13,6 +13,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int total_size = nmemb * size;
 	void *ptr;
+	int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
@@ -23,7 +24,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	/* Set the allocated memory to zero using memset */
-	for (unsigned int i = 0; i < total_size; i++)
+	for (i = 0; i < total_size; i++)
 		((char *)ptr)[i] = 0;
 
 	return (ptr);

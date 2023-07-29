@@ -4,19 +4,30 @@
  *
  * Return: 1 if the input is a prime number, 0 otherwise.
  */
+int is_prime_number_helper(int n, int divisor);
+
 int is_prime_number(int n)
 {
-	int i;
-
 	if (n <= 1)
 		return (0);
 
-	/* Check for factors from 2 up to the square root of n */
-	for (i = 2; i * i <= n; i++)
-	{
-		if (n % i == 0)
-			return (0);
-	}
+	return (is_prime_number_helper(n, 2));
+}
 
-	return (1);
+/**
+ * is_prime_number_helper - Helper function to check if a number is prime recursively.
+ * @n: The input integer.
+ * @divisor: The current divisor to check for primality.
+ *
+ * Return: 1 if the input is a prime number, 0 otherwise.
+ */
+int is_prime_number_helper(int n, int divisor)
+{
+	if (divisor * divisor > n)
+		return (1);
+
+	if (n % divisor == 0)
+		return (0);
+
+	return (is_prime_number_helper(n, divisor + 1));
 }

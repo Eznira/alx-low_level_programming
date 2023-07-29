@@ -57,6 +57,8 @@ int multiply(int num1, int num2)
  */
 int main(int argc, char *argv[])
 {
+	int num1, num2, result;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
@@ -69,9 +71,9 @@ int main(int argc, char *argv[])
 		return (98);
 	}
 
-	int num1 = str_to_int(argv[1]);
-	int num2 = str_to_int(argv[2]);
-	int result = multiply(num1, num2);
+	num1 = str_to_int(argv[1]);
+	num2 = str_to_int(argv[2]);
+	result = multiply(num1, num2);
 
 	printf("%d\n", result);
 

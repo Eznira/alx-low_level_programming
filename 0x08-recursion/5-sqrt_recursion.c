@@ -1,30 +1,45 @@
 /**
- * _sqrt_recursion - Returns the natural square root of a number.
- * @n: The number.
+ * _sqrt_recursion - Calculates the natural square root of a number.
+ * @n: The input number.
  *
  * Return: The natural square root of n.
- *         -1 if n does not have a natural square root.
+ *         If n does not have a natural square root, returns -1.
  */
 int _sqrt_recursion(int n)
 {
-	return (sqrt_helper(n, 1));
+	if (n < 0)
+		return (-1);
+	if (n == 0 || n == 1)
+		return (n);
+
+	return (find_sqrt(n, 1, n));
 }
 
 /**
- * sqrt_helper - Recursive helper function for calculating the square root.
- * @n: The number.
- * @i: The current value to check.
+ * find_sqrt - Helper function to find the square root recursively.
+ * @n: The input number.
+ * @start: The starting value for the search.
+ * @end: The ending value for the search.
  *
  * Return: The natural square root of n.
- *         -1 if n does not have a natural square root.
+ *         If n does not have a natural square root, returns -1.
  */
-int sqrt_helper(int n, int i)
+int find_sqrt(int n, int start, int end)
 {
-	if (i * i == n)
-		return i;
+	int mid, result;
 
-	if (i * i > n)
-		return -1;
+	if (start <= end)
+	{
+		mid = start + (end - start) / 2;
+		result = mid * mid;
 
-	return sqrt_helper(n, i + 1);
+		if (result == n)
+			return (mid);
+		else if (result > n)
+			return (find_sqrt(n, start, mid - 1));
+		else
+			return (find_sqrt(n, mid + 1, end));
+	}
+
+	return (-1);
 }

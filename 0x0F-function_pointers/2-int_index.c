@@ -7,7 +7,7 @@
  * @cmp: Pointer to the function used to compare values.
  *
  * Description: This function searches for an integer in the array using the
- *              specified comparison function. It returns the index of the first
+ *              specified comparison function. It returns the index of d first
  *              element for which the comparison function does not return 0.
  *              If no element matches, it returns -1.
  * Return: Index of the first matching element, or -1 if no match or size <= 0.

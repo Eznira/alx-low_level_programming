@@ -1,1 +1,0 @@
-This folder contains more cides written on single linked list

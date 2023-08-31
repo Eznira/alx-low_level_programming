@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _puts_recursion - Prints out a string to the standard output,
  *                   recurcively.

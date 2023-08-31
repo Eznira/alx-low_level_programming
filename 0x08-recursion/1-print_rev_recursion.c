@@ -1,17 +1,16 @@
 #include "main.h"
 /**
- * _puts_recursion - Prints out a string to the standard output,
- *                   recurcively.
+ * _puts_rev - Prints out a string in reversed order to the
+ *             standard output, recursibely.
  * @a: The pointer to the string.
  */
-void _puts_recursion(char *a)
+void _puts_rev_recursion(char *a)
 {
 	if (*a == '\0')
 	{
-		_putchar('\n');
 		return;
 	}
 
+	print_rev_recursion(a + 1);
 	_putchar(*a);
-	_puts_recursion(a + 1);
 }

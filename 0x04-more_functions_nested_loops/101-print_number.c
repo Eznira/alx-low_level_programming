@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include "main.h"
 /**
  * print_number - Prints an integer to the standard input.
  * @n: The integer to be printed.

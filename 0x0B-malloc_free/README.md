@@ -1,0 +1,1 @@
+This folder contains sample codes on memory allocation using malloc.

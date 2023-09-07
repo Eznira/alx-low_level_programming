@@ -1,4 +1,4 @@
-#include <stdlib.h>
+|#include <stdlib.h>
 /**
  * malloc_checked - Allocates the specified amount of memory,
  *                  if malloc fails,function causes normal process
